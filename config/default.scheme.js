@@ -47,7 +47,7 @@ function md5 (str) {
 function checkNotLogin() {
   if (this.session && this.session.user) {
     this.flash = {error: '已登录!'};
-    this.redirect('back');
+    //this.redirect('back');
     return false;
   }
   return true;
